@@ -1,0 +1,165 @@
+.detailContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100vw;
+    
+    
+}
+
+.dataAndImageContainer {
+    height: 90%;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    max-width: 1050px;
+    background-color: rgba(0, 0, 0, 0.85);
+    box-shadow: 15px 15px 0px 0px rgba(0,0,0,0.65);
+    margin-top: 30px;
+}
+
+
+
+.dataContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    
+    
+}
+
+.dataSubContainer {
+    position: relative;
+    height: 90%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    word-wrap: break-word;
+}
+
+.nameDiv{
+    display: flex;
+    align-items: center;
+    /* background-color: #057c8bcb; */
+    background: linear-gradient(90deg,#03505acb,#96e8f3cb);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height:50px;
+    width: 100%;
+    padding: 0px 0px;
+}
+
+.bulletPointsContainer {
+    margin: 40px 0px 0px 30px;
+
+}
+
+.unOrderedList {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size:large;
+}
+
+.unOrderedList li {
+    margin-top: 30px;
+}
+
+.links {
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-evenly;    
+}
+
+.links img {
+    width: 40px;
+    height: auto
+}
+
+.imageContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.textContainerWrapper {
+    grid-column: span 2;
+    justify-content: center;
+}
+
+.dataTextContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    
+}
+
+.dataTextContainer .p2Text{
+    width: 94.8%;
+    text-align: justify;
+    
+}
+
+.detailImage {
+    /* width: 90%;
+    height: max-content; */
+    float: right;
+    object-fit: cover;
+    height: 90%;
+    width: 450px;
+}
+
+.h2Text {
+    padding-left: 20px;
+}
+
+@media screen and (max-width: 1050px) { 
+    .dataSubContainer {
+        align-items: center;
+    }
+    .dataAndImageContainer {
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+    }
+    .bulletPointsContainer {
+        margin: 65px 30px 0px 0px;
+    }
+    .nameDiv{
+        top: 20px;
+    }
+    .detailImage {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 900px) { 
+    .dataAndImageContainer {
+        margin-top: 100px;
+        box-shadow: none;
+    }
+
+    .detailImage {
+        width: 80%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 300px) { 
+    .nameDiv {
+        height: 80px;
+    }
+    .bulletPointsContainer{
+        margin-top: 80px;
+    }
+}
