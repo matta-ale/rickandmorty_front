@@ -3,4 +3,6 @@ export const ROUTES = {
     LOGIN: '/',
     ABOUT: '/about',
     FAVORITES: '/favorites',
-    DETAIL:'/detail/'}
+    DETAIL:'/detail/',
+    REGISTER:'/register/',
+}

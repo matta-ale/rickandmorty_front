@@ -1,6 +1,7 @@
 import './App.css';
 import Cards from './components/Cards/Cards.jsx';
 import About from './components/About/About';
+import Register from './components/Register/Register';
 import Nav from './components/Nav/Nav';
 import Detail from './components/Detail/Detail';
 import Error from './components/Error/Error';
@@ -24,7 +25,7 @@ function App() {
   const handleLogin = async (userData) => {
     try {
       const { email, password } = userData;
-      const URL = 'http://localhost:3001/rickandmorty/login/';
+      const URL = '/rickandmorty/login/';
       const { data } = await axios(
         URL + `?email=${email}&password=${password}`
       );
@@ -34,18 +35,18 @@ function App() {
       setAccess(access);
       access && navigate('/home');
     } catch (error) {
-      
-      const { status,statusText,data } = error.response;
-      //window.alert(data.message);
-      if (status===404 || status ===403) {
+      try {
+        const { status,data } = error.response;
+        if (status===404 || status ===403) {
         //window.alert('Incorrect email or password');
         window.alert(data);
-      } else {
-        window.alert(statusText);
+        } 
+      } catch (err) {
+      window.alert(error);
       }
-      
     }
   };
+  
   const handleLogout = () => {
     setCharacters([])
     setAccess(false);
@@ -62,7 +63,7 @@ function App() {
     } else {
       try {
         const response = await axios(
-          `http://localhost:3001/rickandmorty/character/${id}`
+          `/rickandmorty/character/${id}`
         );
         const { data } = response;
         if (data.name) {
@@ -109,6 +110,7 @@ function App() {
           element={<Cards characters={characters} onClose={onCLose} />}
         ></Route>
         <Route path={ROUTES.ABOUT} element={<About />}></Route>
+        <Route path={ROUTES.REGISTER} element={<Register />}></Route>
         <Route path={ROUTES.FAVORITES} element={<Favorites />}></Route>
         <Route path={ROUTES.DETAIL + ':id'} element={<Detail />}></Route>
         <Route path='*' element={<Error />} />
