@@ -4,5 +4,5 @@ export const ROUTES = {
     ABOUT: '/about',
     FAVORITES: '/favorites',
     DETAIL:'/detail/',
-    REGISTER:'/register/',
+    REGISTER:'/register',
 }

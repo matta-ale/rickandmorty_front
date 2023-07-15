@@ -27,7 +27,7 @@ const Nav = (props) => {
             <span>Favorites</span>
           </div>
         </Link>
-          <div className={styles.navButton}>
+          <div className={styles.logoutButton}>
             <button style={{all: 'unset', cursor:'pointer', padding:'20px', translate:'0px -3px'} } onClick={handleLogout}>Log out</button>
           </div>
       </div>

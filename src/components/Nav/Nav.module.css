@@ -13,7 +13,6 @@
 .navButtonGroup {
     display: flex;
     justify-content: space-evenly;
-    min-width: 700px;
 }
 
 .navButton {
@@ -23,7 +22,7 @@
     height: 75px;
     width: 120px;
     font-size: 22px;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
     color: #35ff03; /* Fluorescent green color */
     text-decoration: none;
     white-space: nowrap;
@@ -35,10 +34,36 @@
 
 @keyframes glow {
     from {
-      text-shadow: 0 0 0px #fff, 0 0 0px #fff, 0 0 2px #35ff03, 0 0 4px #35ff03, 0 0 6px #35ff03, 0 0 8px #35ff03, 0 0 10px #35ff03;
+      text-shadow: 0 0 0px #fff, 0 0 0px #fff, 0 0 1px #35ff03, 0 0 2px #35ff03, 0 0 3px #35ff03, 0 0 4px #35ff03, 0 0 5px #35ff03;
     }
     to {
       text-shadow: 0 0 0px #fff, 0 0 2px #35ff03, 0 0 4px #35ff03, 0 0 6px #35ff03, 0 0 8px #35ff03, 0 0 10px #35ff03, 0 0 12px #35ff03;
+    }
+  }
+
+  .logoutButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+    width: 120px;
+    font-size: 22px;
+    letter-spacing: 1px;
+    color: #ff1493; /* Fluorescent red color #f74b55*/
+    text-decoration: none;
+    white-space: nowrap;
+    /* animation */
+    position: relative;
+    transition: transform 0.3s ease;
+    animation: glowLogout 1s ease-in-out infinite alternate;
+}
+
+@keyframes glowLogout {
+    from {
+      text-shadow: 0 0 0px #fff, 0 0 0px #fff, 0 0 1px #ff1493, 0 0 2px #ff1493, 0 0 3px #ff1493, 0 0 4px #ff1493, 0 0 5px #ff1493;
+    }
+    to {
+      text-shadow: 0 0 0px #fff, 0 0 2px #ff1493, 0 0 4px #ff1493, 0 0 6px #ff1493, 0 0 8px #ff1493, 0 0 10px #ff1493, 0 0 12px #ff1493;
     }
   }
 

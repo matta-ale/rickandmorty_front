@@ -23,7 +23,7 @@ export default function Register(props) {
   <div className={styles.formContainer}> 
     <div className={styles.formDiv}>
       <div className={styles.titleContainer}>
-        <h1>Please login</h1>
+        <h1>Please register</h1>
         <img className={styles.loginImg} src={loginImage} alt="Login" />
       </div>
       <form className = {styles.form} onSubmit={handleSubmit}>
@@ -35,7 +35,7 @@ export default function Register(props) {
         <p className={styles.warning}>{errors.password}</p>
         <label htmlFor="">Repeat password: </label>
         <input className={styles.input} type="password" name="repeatPassword" placeholder='Repeat your password...' onChange={handleChange} value={userData.repeatPassword}/>
-        <p className={styles.warning}>{errors.password}</p>
+        <p className={styles.warning}>{errors.repeatPassword}</p>
         <br />
         <button className={styles.submitButton} type='submit'>Register</button>
       </form>

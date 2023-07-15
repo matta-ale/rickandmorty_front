@@ -21,11 +21,22 @@
 }
 
 .title {
-    color: white;
+    color: #ffff00;
     font-weight: bold;
     display: flex;
     justify-content: center;
+    animation: glow 1s ease-in-out infinite alternate;
 }
+
+@keyframes glow {
+    from {
+      text-shadow: 0 0 0px #fff, 0 0 0px #fff, 0 0 1px #ffff00, 0 0 2px #ffff00, 0 0 3px #ffff00, 0 0 4px #ffff00, 0 0 5px #ffff00;
+    }
+    to {
+      text-shadow: 0 0 0px #fff, 0 0 2px #ffff00, 0 0 4px #ffff00, 0 0 6px #ffff00, 0 0 8px #ffff00, 0 0 10px #ffff00, 0 0 12px #ffff00;
+    }
+  }
+
 
 .select {
     height: 100%;
@@ -36,7 +47,9 @@
     font-size: 18px;
     font-family: cursive;
     font-weight: bold;
-    background-color: #f0ed46;
+    /* background-color: #f0ed46; */
+    background-color: #ffff00;
+    box-shadow: 0 0 5px #ffff00;
     border-radius: 5px;
     margin-right: 5px;
     margin-top: 0px;

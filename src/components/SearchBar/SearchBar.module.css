@@ -22,13 +22,20 @@
 }
 
 .inputBar {
+    color: white;
     font-size:16px;
     text-align:start;
+    background-color: black;
+    box-shadow: 0 0 5px white;
     height: 30px;
     width: 400px;
     border-radius: 5px;
     margin-right: 6px;
     font-family: cursive; 
+}
+
+.inputBar::placeholder {
+    color: rgba(255, 255, 255, 0.74);
 }
 
 .inputBar:focus {
@@ -38,7 +45,9 @@
 .addButton {
     display: flex;
     color: black;
-    background-color: #f74b55;
+    background-color: #35ff03;
+    box-shadow: 0 0 5px #35ff03;
+    /* background-color: #f74b55; */
     font-size: 18px;
     height: 30px;
     width: auto; 
