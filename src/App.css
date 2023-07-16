@@ -3,8 +3,9 @@
   src: url(./font/get_schwifty.ttf);
 } */
 @font-face {
-  font-family: 'Creepster';
-  src: url(./font/get_schwifty.ttf);
+  font-family: 'PaytoneOne';
+  src: url(./font/PaytoneOne-Regular.ttf);
+  letter-spacing: 10px;
 }
 
 
@@ -12,7 +13,7 @@
   background-image: url(./img/background.jpg);
   background-repeat: no-repeat;
   background-size:cover;
-  font-family:'Comic Sans', 'Comic Sans MS', cursive;
+  font-family:'PaytoneOne';
   width: 100vw;
   height: 100vh;
   overflow-x:hidden;

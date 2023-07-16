@@ -35,7 +35,7 @@
 }
 
 .register button {
-    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-family: 'PaytoneOne';
     font-size: 16px;
     background-color: rgb(255, 239, 18);
     width:120px;
@@ -48,14 +48,14 @@
 
 .input {
     height:20px;
-    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-family: 'PaytoneOne';
     font-size:14px; 
     width:100%;
     margin-top: 10px; 
 }
 
 .submitButton {
-    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-family: 'PaytoneOne';
     font-size: 20px;
     background-color: rgb(105, 255, 18);
     width:100%;

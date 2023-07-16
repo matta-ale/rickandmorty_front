@@ -5,7 +5,7 @@
     width: 100vw;
     height: 75px;
     background-color: rgba(0, 0, 0, 0.7);
-    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-family: 'PaytoneOne';
     font-weight: bold;
 
 }
@@ -22,7 +22,7 @@
     height: 75px;
     width: 120px;
     font-size: 22px;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     color: #35ff03; /* Fluorescent green color */
     text-decoration: none;
     white-space: nowrap;
@@ -48,7 +48,7 @@
     height: 75px;
     width: 120px;
     font-size: 22px;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     color: #ff1493; /* Fluorescent red color #f74b55*/
     text-decoration: none;
     white-space: nowrap;
