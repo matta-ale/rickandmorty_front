@@ -100,7 +100,7 @@
 
 @media screen  and (max-width: 450px) { 
     .inputBar {
-        width: 30vw;
+        width: 40vw;
     }
     .searchBarDiv {
         justify-content: center;
