@@ -4,13 +4,13 @@
 }
 
 .App {
-
   background-image: url(./img/background.jpg);
   background-repeat: no-repeat;
   background-size:cover;
-  
-  font-family:cursive;
+  font-family:'Comic Sans MS', cursive, sans-serif;
   width: 100vw;
   height: 100vh;
-  overflow:auto;
+  overflow-x:hidden;
+  overflow-y:auto;
+  scrollbar-gutter: stable both edges;
 }
