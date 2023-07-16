@@ -148,7 +148,7 @@
         max-width: 100vw;
     }
 
-    .navButton {
+    .navButton, .logoutButton {
         width: 90px;
         font-size: 16px;
     }
@@ -156,7 +156,7 @@
 
 @media screen and (max-width: 350px) {
 
-    .navButton {
+    .navButton, .logoutButton {
         width: 70px;
         font-size: 12px;
 
